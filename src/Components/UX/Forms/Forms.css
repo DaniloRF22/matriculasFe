@@ -14,7 +14,7 @@
   border-radius: 0.25rem;
 }
 .form_field input:focus{
-  outline-color: darkgreen;
+  outline-color: rgb(84, 84, 230);
   outline-width: thin;
 }
 .form_field .field_info{
@@ -45,7 +45,7 @@ button {
 
 button.button_primary{
   padding:0.75rem;
-  background-color: darkgreen;
+  background-color: rgb(84, 84, 230);
 }
 
 button.button_secondary{
