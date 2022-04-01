@@ -11,6 +11,7 @@ import Signin from './Components/Views/Signin/SigninPage';
 import Login from './Components/Views/Login/LoginPage';
 import Todo from './Components/Views/Todo/TodoPage';
 import Pacientes from './Components/Views/Pacientes/PacientesPage';
+import PacientesDetail from './Components/Views/PacienteDetail/pacientesDetail';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
 
             <Route path="/todos" element={<Private><Todo /></Private>} />
             <Route path="/pacientes" element={<Private><Pacientes /></Private>} />
+            <Route path="/pacientes/:pacienteId" element={<Private><PacientesDetail /></Private>} />
           </Routes>
         </BrowserRouter>
       </PersistGate>

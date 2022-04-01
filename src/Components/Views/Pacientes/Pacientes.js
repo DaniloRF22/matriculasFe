@@ -1,5 +1,6 @@
 import Nav from "../../UX/Nav/Nav";
 import Page from "../../UX/Page/Page";
+import  { Link } from   "react-router-dom";
 
 const Pacientes = ({pacientes})=>{
   return (
@@ -16,7 +17,9 @@ const Pacientes = ({pacientes})=>{
 const PacientesItem = ({paciente})=>{
   return (
     <section>
-      {paciente.nombres} {paciente.apellidos}
+      <Link to={`/pacientes/${paciente._id}`}>
+        {paciente.nombres} {paciente.apellidos}
+      </Link>
     </section>
   );
 }
