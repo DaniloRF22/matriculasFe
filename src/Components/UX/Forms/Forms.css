@@ -50,8 +50,8 @@ button.button_primary{
 
 button.button_secondary{
   padding:0.75rem;
-  background-color: darkorange;
-  color:#000;
+  background-color: rgb(84, 84, 230);
+  color:#fff;
 }
 
 button.pill {

@@ -11,7 +11,7 @@ import Signin from './Components/Views/Signin/SigninPage';
 import Login from './Components/Views/Login/LoginPage';
 import Todo from './Components/Views/Todo/TodoPage';
 import Pacientes from './Components/Views/Pacientes/PacientesPage';
-import PacientesDetail from './Components/Views/PacienteDetail/pacientesDetail';
+import PacientesDetail from './Components/Views/PacienteDetail/PacientesDetail';
 
 function App() {
   return (
