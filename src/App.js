@@ -16,6 +16,7 @@ import Estudiante from './Components/Views/alumnos/estudiantePage';
 import Grado from './Components/Views/grados/grado';
 import Seccion from './Components/Views/seccion/seccionPage'
 import Jornada from './Components/Views/jornadas/jornadaPage'
+import Aula from './Components/Views/aulas/aulasPage'
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <Route path="/grado" element={<Private><Grado /></Private>} />
             <Route path="/seccion" element={<Private><Seccion /></Private>} />
             <Route path="/jornada" element={<Private><Jornada /></Private>} />
-            
+            <Route path="/aula" element={<Private><Aula /></Private>} />
 
           </Routes>
         </BrowserRouter>

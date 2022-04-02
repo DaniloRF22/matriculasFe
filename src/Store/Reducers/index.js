@@ -6,6 +6,7 @@ import { securityReducer } from './Security/Security.reducer';
 import { TodoReducer } from './Todo/Todo.reducer';
 import { seccionesReducer } from './Secciones/Secciones.reducer';
 import {jornadasReducer} from './Jornadas/Jornadas.reducer';
+import {aulasReducer} from './Aulas/Aulas.reducer'
 
 
 export const rootReducer = combineReducers(
@@ -17,6 +18,7 @@ export const rootReducer = combineReducers(
     grados: gradosReducer,
     seccion:seccionesReducer,
     jornada:jornadasReducer,
+    aulas:aulasReducer,
   }
 )
 
