@@ -13,6 +13,7 @@ import Todo from './Components/Views/Todo/TodoPage';
 import Pacientes from './Components/Views/Pacientes/PacientesPage';
 import PacientesDetail from './Components/Views/PacienteDetail/PacientesDetail';
 import Estudiante from './Components/Views/alumnos/estudiantePage';
+import Grado from './Components/Views/grados/grado';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/pacientes" element={<Private><Pacientes /></Private>} />
             <Route path="/pacientes/:pacienteId" element={<Private><PacientesDetail /></Private>} />
             <Route path="/estudiante" element={<Private><Estudiante /></Private>} />
+            <Route path="/grado" element={<Private><Grado /></Private>} />
           </Routes>
         </BrowserRouter>
       </PersistGate>

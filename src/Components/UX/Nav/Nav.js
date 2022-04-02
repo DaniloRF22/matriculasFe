@@ -33,6 +33,14 @@ const Nav = ()=>{
               Estudiante
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to='/grado'
+              className={currentLocation.pathname === '/grado' ? 'active' : ''}
+            >
+              Grado
+            </NavLink>
+          </li>
         </ul>
       </nav>
     );

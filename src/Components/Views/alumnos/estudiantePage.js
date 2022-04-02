@@ -48,7 +48,7 @@ const estudiantePage = ()=>{
       );
       console.log('Estudiante Request: ', data)
     } catch(ex) {
-      console.log('Error on Estudante submit', ex);
+      console.log('Error on Estudiante submit', ex);
     }
   }
   const onCancel = (e)=>{
@@ -60,7 +60,7 @@ const estudiantePage = ()=>{
   return (
     <>
       <Estudiante
-        txtidentidadValue={txtedad}
+        txtidentidadValue={txtidentidad}
         txtnombre_completoValue={txtnombre_completo}
         txtedadValue={txtedad}
         txtnombre_encargadoValue={txtnombre_encargado}
