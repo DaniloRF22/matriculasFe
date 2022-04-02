@@ -1,13 +1,13 @@
-import Seccion from './seccion';
+import Jornada from './jornada';
 import { useState } from 'react';
 import { privateAxios } from '../../../Lib/apiClient';
 
-const seccionPage = ()=>{
-  const [txtseccion, setTxtseccion] = useState('');
+const jornadaPage = ()=>{
+  const [txtsjornada, setTxtjornada] = useState('');
   const onChangeHandler = ({target: {name, value}})=>{
     switch (name) {
-      case 'txtseccion':
-        setTxtseccion(value);
+      case 'txtjornada':
+        setTxtjornada(value);
         break;
     }
   }
@@ -16,14 +16,14 @@ const seccionPage = ()=>{
     e.stopPropagation();
     try{
       const data = await privateAxios.post(
-        'api/v1/secciones/new',
+        'api/v1/jornada/new',
         {
-          seccion: txtseccion,
+          jornada: txtjornada,
         }
       );
-      console.log('Seccion Request: ', data)
+      console.log('Jornada Request: ', data)
     } catch(ex) {
-      console.log('Error on Seccion submit', ex);
+      console.log('Error on Jornada submit', ex);
     }
   }
   const onCancel = (e)=>{
@@ -34,10 +34,10 @@ const seccionPage = ()=>{
 
   return (
     <>
-      <Seccion
-        txtseccionValue={txtseccion}
+      <Jornada
+        txtjornadaValue={txtjornada}
         onChange={onChangeHandler}
-        errorTxtseccion=''
+        errorTxtjornada=''
         onConfirmClick={onConfirm}
         onCancelClick={onCancel}
       />
@@ -45,4 +45,4 @@ const seccionPage = ()=>{
   )
 }
 
-export default seccionPage;
+export default jornadaPage;

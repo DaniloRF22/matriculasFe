@@ -5,6 +5,7 @@ import { pacientesReducer } from './Pacientes/Pacientes.reducer';
 import { securityReducer } from './Security/Security.reducer';
 import { TodoReducer } from './Todo/Todo.reducer';
 import { seccionesReducer } from './Secciones/Secciones.reducer';
+import {jornadasReducer} from './Jornadas/Jornadas.reducer';
 
 
 export const rootReducer = combineReducers(
@@ -15,6 +16,7 @@ export const rootReducer = combineReducers(
     estudiantes: estudiantesReducer,
     grados: gradosReducer,
     seccion:seccionesReducer,
+    jornada:jornadasReducer,
   }
 )
 

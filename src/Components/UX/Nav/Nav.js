@@ -49,6 +49,14 @@ const Nav = ()=>{
               Seccion
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to='/jornada'
+              className={currentLocation.pathname === '/jornada' ? 'active' : ''}
+            >
+              Jornada
+            </NavLink>
+          </li>
         </ul>
       </nav>
     );
