@@ -65,6 +65,14 @@ const Nav = ()=>{
               Aula
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to='/horario'
+              className={currentLocation.pathname === '/horario' ? 'active' : ''}
+            >
+              Horario
+            </NavLink>
+          </li>
         </ul>
       </nav>
     );
