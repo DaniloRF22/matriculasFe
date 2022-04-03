@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { privateAxios } from '../../../Lib/apiClient';
 
 const jornadaPage = ()=>{
-  const [txtsjornada, setTxtjornada] = useState('');
+  const [txtjornada, setTxtjornada] = useState('');
   const onChangeHandler = ({target: {name, value}})=>{
     switch (name) {
       case 'txtjornada':

@@ -3,7 +3,7 @@ import Input from "../../UX/Forms/Input";
 import { PrimaryButton } from "../../UX/Forms/Button";
 import Nav from "../../UX/Nav/Nav";
 const Jornada = ({
-  txtjornadaonValue,
+  txtjornadaValue,
   onChange: onChangeHandler,
   errorTxtjornada,
   onConfirmClick,
@@ -17,7 +17,7 @@ const Jornada = ({
           type="text"
           name="txtjornada"
           placeholder="Jornada"
-          value={txtjornadanValue}
+          value={txtjornadaValue}
           error={errorTxtjornada}
           onChange={onChangeHandler}
         />

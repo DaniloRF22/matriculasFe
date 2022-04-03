@@ -42,6 +42,14 @@ const Nav = ()=>{
             </NavLink>
           </li>
           <li>
+          <NavLink
+              to='/maestro'
+              className={currentLocation.pathname === '/maestro' ? 'active' : ''}
+            >
+              Maestro
+            </NavLink>
+          </li>
+          <li>
             <NavLink
               to='/seccion'
               className={currentLocation.pathname === '/seccion' ? 'active' : ''}

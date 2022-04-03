@@ -13,6 +13,7 @@ import Todo from './Components/Views/Todo/TodoPage';
 import Pacientes from './Components/Views/Pacientes/PacientesPage';
 import PacientesDetail from './Components/Views/PacienteDetail/PacientesDetail';
 import Estudiante from './Components/Views/alumnos/estudiantePage';
+import Maestro from './Components/Views/maestros/maestroPage';
 import Grado from './Components/Views/grados/grado';
 import Seccion from './Components/Views/seccion/seccionPage'
 import Jornada from './Components/Views/jornadas/jornadaPage'
@@ -33,6 +34,7 @@ function App() {
             <Route path="/pacientes" element={<Private><Pacientes /></Private>} />
             <Route path="/pacientes/:pacienteId" element={<Private><PacientesDetail /></Private>} />
             <Route path="/estudiante" element={<Private><Estudiante /></Private>} />
+            <Route path="/maestro" element={<Private><Maestro /></Private>} />
             <Route path="/grado" element={<Private><Grado /></Private>} />
             <Route path="/seccion" element={<Private><Seccion /></Private>} />
             <Route path="/jornada" element={<Private><Jornada /></Private>} />
