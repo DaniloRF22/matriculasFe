@@ -9,16 +9,14 @@ import {store, persistor} from './Store';
 import Splash from './Components/Views/Splash';
 import Signin from './Components/Views/Signin/SigninPage';
 import Login from './Components/Views/Login/LoginPage';
-import Todo from './Components/Views/Todo/TodoPage';
-import Pacientes from './Components/Views/Pacientes/PacientesPage';
-import PacientesDetail from './Components/Views/PacienteDetail/PacientesDetail';
 import Estudiante from './Components/Views/alumnos/estudiantePage';
 import Maestro from './Components/Views/maestros/maestroPage';
-import Grado from './Components/Views/grados/grado';
+import Grado from './Components/Views/grados/gradoPage';
 import Seccion from './Components/Views/seccion/seccionPage'
 import Jornada from './Components/Views/jornadas/jornadaPage'
 import Aula from './Components/Views/aulas/aulasPage'
 import Horario from './Components/Views/Horarios/HorarioPage';
+import Matricula from './Components/Views/matricula/matriculaPage';
 
 function App() {
   return (
@@ -30,9 +28,6 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/signin" element={<Signin />} />
 
-            <Route path="/todos" element={<Private><Todo /></Private>} />
-            <Route path="/pacientes" element={<Private><Pacientes /></Private>} />
-            <Route path="/pacientes/:pacienteId" element={<Private><PacientesDetail /></Private>} />
             <Route path="/estudiante" element={<Private><Estudiante /></Private>} />
             <Route path="/maestro" element={<Private><Maestro /></Private>} />
             <Route path="/grado" element={<Private><Grado /></Private>} />
@@ -40,6 +35,7 @@ function App() {
             <Route path="/jornada" element={<Private><Jornada /></Private>} />
             <Route path="/aula" element={<Private><Aula /></Private>} />
             <Route path="/horario" element={<Private><Horario /></Private>} />
+            <Route path="/matricula" element={<Private><Matricula /></Private>} />
 
           </Routes>
         </BrowserRouter>

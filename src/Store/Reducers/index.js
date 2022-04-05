@@ -9,6 +9,7 @@ import { seccionesReducer } from './Secciones/Secciones.reducer';
 import {jornadasReducer} from './Jornadas/Jornadas.reducer';
 import {aulasReducer} from './Aulas/Aulas.reducer';
 import { horariosReducer } from './Horarios/Horarios.reducer';
+import { matriculasReducer } from './Matriculas/Matricula.reducer'
 
 
 
@@ -24,6 +25,7 @@ export const rootReducer = combineReducers(
     jornada:jornadasReducer,
     aulas:aulasReducer,
     horarios:horariosReducer,
+    matriculas:matriculasReducer,
   }
 )
 

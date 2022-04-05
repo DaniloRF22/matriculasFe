@@ -11,22 +11,6 @@ const Nav = ()=>{
         <ul>
           <li>
             <NavLink
-              to='/pacientes'
-              className={currentLocation.pathname === '/pacientes' ? 'active' : ''}
-            >
-              Pacientes
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to='/todos'
-              className={currentLocation.pathname === '/todos' ? 'active' : ''}
-            >
-              Todos
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to='/estudiante'
               className={currentLocation.pathname === '/estudiante' ? 'active' : ''}
             >
@@ -79,6 +63,14 @@ const Nav = ()=>{
               className={currentLocation.pathname === '/horario' ? 'active' : ''}
             >
               Horario
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to='/matricula'
+              className={currentLocation.pathname === '/matricula' ? 'active' : ''}
+            >
+              Matricula
             </NavLink>
           </li>
         </ul>
